@@ -1,0 +1,4 @@
+# AGC-MPC-Lab-V3
+Run `npm install` then `npm run dev`. Deploy with Vite preset, build `npm run build`, output `dist`.
+
+Research prototype inspired by Hinojosa et al. (2025), DOI 10.1109/TPWRS.2024.3499313. Table II candidate data and published benchmarks are included. Four-zone network, aggregate frequency model, assumed dynamics and base flows are illustrative. Network allocation uses a projected penalty relaxation, not stochastic MILP; no explicit losses or voltage dependence. MPC uses finite-horizon candidate search with simplified prediction, not a certified QP. Scenario MPC applies scenario penalties to line flows only; distributed mode is coordinate allocation, not independent distributed controllers. Replicator is static cost weighting. Koopman and Deep MPC are disabled placeholders. No validation against PowerFactory. Costs are regulation proxies, not comparable to paper totals. Do not use for operational decisions.
